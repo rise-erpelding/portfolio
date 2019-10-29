@@ -1,28 +1,47 @@
 body * {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
     text-align: center;
+    font-family: 'Overpass', sans-serif;
 }
 
-/* Header, main, footer styling */
+
+/* Header, main, navigation, footer styling */
 #header {
-    background-color: darkgray;
+    background-color: #089AE8;
     height: 20vh;
     padding: 10px 10px 10px 10px;
     margin: 10px 10px 10px 10px;
 }
 
+.nav-link {
+    color: #051618;
+    text-transform: uppercase;
+}
+
 #main {
-    background-color: lightgray;
+    background-color: #021C2B;
     min-height: 70vh;
     padding: 10px 10px 10px 10px;
     margin: 10px 10px 10px 10px;
 }
 
 #footer {
-    background-color: darkgray;
+    background-color: #051618;
     padding: 10px 10px 10px 10px;
     margin: 10px 10px 10px 10px;
+}
+
+/* Text Styles */
+.heading-text {
+    font-family: 'Inconsolata', sans-serif;
+}
+
+.dark-text {
+    color: #051618;
+}
+
+.light-text {
+    color: #EBF2FA;
 }
 
 /* Image styling */
@@ -32,4 +51,43 @@ body * {
 
 .quiz-app-screenshot {
     max-width: 90%;
+}
+
+/* Link & button styling */
+a:link {
+    text-decoration: none;
+    color: #051618;
+}
+
+a:visited {
+    color: #021C2B;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: white;
+}
+
+.button {
+    border: none;
+    background-color: #32C756;
+}
+
+.button > a:hover {
+    color: white;
+}
+
+.button > a:active {
+    color: white;
+}
+
+#footer > a:link {
+    color: white;
+}
+
+#footer > a:visited {
+    color: #EBF2FA;
 }
