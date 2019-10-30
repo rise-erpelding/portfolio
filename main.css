@@ -1,39 +1,78 @@
 body * {
     box-sizing: border-box;
-    text-align: center;
     font-family: 'Overpass', sans-serif;
 }
 
+body {
+    background-color: #021C2B;
+}
 
-/* Header, main, navigation, footer styling */
-#header {
-    background-color: #089AE8;
-    height: 20vh;
-    padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
+
+/* Container styling */
+header {
+    height: 30vh;
+    position: relative;
+    background-image: linear-gradient(#61bef0, #089ae8);
+}
+
+.svg-header {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* height: 15vw; */
+    height: 100px;
+}
+
+#navigation {
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 10px;
 }
 
 .nav-link {
     color: #051618;
     text-transform: uppercase;
+    padding-left: 20px;
+    font-size: .9em;
 }
 
-#main {
-    background-color: #021C2B;
-    min-height: 70vh;
-    padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
+main {
+    background-color: #051618;
+    position: relative;
+    /* min-height: 65vh; */
+}
+
+.svg-main {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* height: 15vw; */
+    height: 100px;
+}
+
+.intro {
+    padding: 20px 20px 20px 20px;
+    min-height: 700px;
+}
+
+.project {
+    min-height: 100%;
 }
 
 #footer {
-    background-color: #051618;
-    padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
+    background-color: #021C2B;
+    display: flex;
+    justify-content: center;
 }
 
 /* Text Styles */
+
 .heading-text {
     font-family: 'Inconsolata', sans-serif;
+    position: relative;
+    left: 8%;
+    top: 30%;
+    font-size: 1.7em;
 }
 
 .dark-text {
@@ -44,9 +83,21 @@ body * {
     color: #EBF2FA;
 }
 
+.description {
+    position: absolute;
+    left: 30%;
+    right: 5%;
+    top: 10%;
+    font-size: .85em;
+}
+
 /* Image styling */
 .self {
     width: 20%;
+    border-radius: 50%;
+    position: absolute;
+    left: 5%;
+    top: 15%;
 }
 
 .quiz-app-screenshot {
@@ -54,6 +105,7 @@ body * {
 }
 
 /* Link & button styling */
+
 a:link {
     text-decoration: none;
     color: #051618;
@@ -90,4 +142,74 @@ a:active {
 
 #footer > a:visited {
     color: #EBF2FA;
+}
+
+.email-me {
+    position: absolute;
+    top: 60%;
+    right: 20%;
+}
+
+.footer-icon {
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Styles for screens wider than 325px */
+@media screen and (min-width: 325px) {
+    .nav-link {
+    font-size: 1em;
+    }
+
+    .heading-text {
+        font-size: 2.2em;
+    }
+
+    .description {
+        font-size: 1em;
+    }
+}
+
+/* Styles for screens wider than 680px */
+@media screen and (min-width: 680px) {
+    .heading-text {
+        font-size: 2.7em;
+    }
+
+    .self {
+        width: 18%;
+        left: 8%;
+    }
+
+    .description {
+        right: 8%;
+        font-size: 1.2em;
+    }
+
+    .email-me {
+        top: 45%;
+    }
+}
+
+/* Styles for screens wider than 1000px */
+@media screen and (min-width: 1000px) {
+    .nav-link {
+        font-size: 1.2em;
+    }
+
+    .heading-text {
+        font-size: 3.5em;
+    }
+
+    .self {
+        width: 15%;
+        left: 15%;
+    }
+
+    .description {
+        left: 35%;
+        right: 15%;
+        font-size: 1.4em;
+    }
 }
