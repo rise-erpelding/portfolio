@@ -17,7 +17,8 @@ body {
 header {
     height: 30vh;
     position: relative;
-    background-image: linear-gradient(#61bef0, #089ae8);
+    background-color: #089AE8;
+    /* background-image: linear-gradient(#61bef0, #089ae8); */
 }
 
 .svg-header {
@@ -178,11 +179,20 @@ main > a:visited {
     }
 }
 
-/* JS Styles */
-.js-navigation {
-    list-style: none;
-    background-color: purple;
-    display: inline;
+/* JS Button Styles */
+.nav-button {
+    background-color: #089AE8;
+    border: none;
+    text-transform: uppercase;
+    outline-color: white;
+}
+
+.nav-button:hover {
+    border-bottom: 3px solid #32C756;
+}
+
+.nav-button:active {
+    border-bottom: 3px solid white;
 }
 
 /* Styles for screens wider than 680px */
