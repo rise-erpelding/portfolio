@@ -5,31 +5,26 @@ body * {
 }
 
 /* Header, main, footer styling */
+#navigation {
+    background-color: whitesmoke;
+}
+
 #header {
-    background-color: darkgray;
-    height: 20vh;
-    padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
+    background-color: lightgray;
+    height: 25vh;
 }
 
 #main {
-    background-color: lightgray;
+    background-color: gray;
     min-height: 70vh;
-    padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
 }
 
 #footer {
+    background-color: whitesmoke;
+}
+
+/* Section styling */
+.intro, .projects, .about {
     background-color: darkgray;
-    padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
-}
-
-/* Image styling */
-.self {
-    width: 20%;
-}
-
-.quiz-app-screenshot {
-    max-width: 90%;
+    height: 20vh;
 }
