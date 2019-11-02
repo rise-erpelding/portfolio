@@ -12,6 +12,7 @@ function displayAbout() {
         $('.intro').addClass('hidden');
         $('.projects').addClass('hidden');
         $('.bio').removeClass('hidden');
+        $('.im-rise').text('About');
     });
     //event listener
     //hide .intro
@@ -37,6 +38,7 @@ function displayProjects() {
         $('.intro').addClass('hidden');
         $('.bio').addClass('hidden');
         $('.projects').removeClass('hidden');
+        $('.im-rise').text('Projects');
     });
     // $('.js-navigation').on('click', '.js-projects', function() {
     //     $('.intro').addClass('hidden');
@@ -60,6 +62,7 @@ function displayHome() {
         $('.intro').removeClass('hidden');
         $('.bio').addClass('hidden');
         $('.projects').addClass('hidden');
+        $('.im-rise').text('Hi! I\'m Risé.');
     });
     console.log('`displayHome` ran');
 }

@@ -57,6 +57,12 @@ main {
 
 #footer {
     background-color: #021C2B;
+    /* display: flex;
+    justify-content: center; */
+}
+
+#icon-container {
+    background-color: orange;
     display: flex;
     justify-content: center;
 }
@@ -107,16 +113,18 @@ main {
 }
 
 .footer-icon {
-    height: 5%;
+    height: 30px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 /* Positioning elements */
-.heading-text {
+.im-rise {
     padding-left: 10%;
     padding-top: 12%;
 }
+
+
 
 .self {
     margin-top: 6%;
@@ -124,8 +132,19 @@ main {
     float: left;
 }
 
+.description {
+    padding-left: 30%;
+}
+
 .email-me {
-    clear: left;
     margin-left: 60%;
+    clear: left;
+}
+
+/* Styles for Galaxy S5, iPhone 6/7/8 */
+@media screen and (min-width: 360px) {
+    .im-rise {
+        color: orange;
+    }
 }
 
