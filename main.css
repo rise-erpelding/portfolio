@@ -160,7 +160,19 @@ h1 {
     h1 {
         padding-top: 5%;
     }
+
+    .projects {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .project {
+        width: 45%;
+    }
 }
+
 
 @media screen and (min-width: 1520px) {
     h1 {
@@ -170,4 +182,16 @@ h1 {
     .description {
         margin-top: 7%;
     }
+
+    .projects {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .project {
+        width: 45%;
+    }
+
 }
