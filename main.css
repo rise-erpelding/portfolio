@@ -7,9 +7,33 @@ body {
     background-color: #021C2B;
 }
 
+/*Sticky Footer*/
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#wrapper {
+    min-height: 94%;
+    /*going to have to adjust this in media queries for screen sizes*/
+}
+
+main {
+    /* padding: 20px; */
+    padding-bottom: 50px;
+}
+
+footer {
+    height: 50px;
+    /* margin-top: -50px; */
+}
+/*End Sticky Footer*/
+
+/*The hidden class*/
 .hidden {
     display: none;
 }
+/*End the hidden class*/
 
 /* Container styling */
 header {
@@ -26,16 +50,17 @@ header {
 }
 
 #navigation {
-    text-align: center;
+    /* text-align: center; */
     padding-top: 10px;
     padding-right: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-link {
     color: #051618;
     text-transform: uppercase;
     padding-left: 20px;
-    font-size: .9em;
 }
 
 main {
@@ -57,15 +82,10 @@ main {
 
 #footer {
     background-color: #021C2B;
-    /* display: flex;
-    justify-content: center; */
-}
-
-#icon-container {
-    background-color: orange;
     display: flex;
     justify-content: center;
 }
+/*End container styling*/
 
 /* JS Button Styles */
 .nav-button {
@@ -73,6 +93,7 @@ main {
     border: none;
     text-transform: uppercase;
     outline-color: white;
+    font-size: .9em;
 }
 
 .nav-button:hover {
@@ -82,6 +103,36 @@ main {
 .nav-button:active {
     border-bottom: 3px solid white;
 }
+/*end JS button styles*/
+
+/*Regular button and link styles*/
+.email-me {
+    background-color: #32C756;
+    border: 1px solid #32C756;
+}
+
+.email-me > a:link {
+    color: #051618;
+    text-decoration: none;
+    font-family: 'Inconsolata';
+}
+
+.email-me > a:active {
+    color: #EBF2FA;
+}
+
+a:link {
+    color: #32C756;
+}
+
+a:active {
+    color: #EBF2FA;
+}
+
+a:visited {
+    color: #32C756;
+}
+/*End regular button styles*/
 
 /* Text Styles */
 .heading-text {
@@ -98,8 +149,8 @@ main {
     color: #EBF2FA;
 }
 
-.description {
-    font-size: .85em;
+.description, .bio, .project-description {
+    font-size: 1em;
 }
 
 /* Image styling */
@@ -109,7 +160,7 @@ main {
 }
 
 .quiz-app-screenshot {
-    max-width: 90%;
+    max-width: 100%;
 }
 
 .footer-icon {
@@ -123,8 +174,6 @@ main {
     padding-left: 10%;
     padding-top: 12%;
 }
-
-
 
 .self {
     margin-top: 6%;
@@ -142,9 +191,83 @@ main {
 }
 
 /* Styles for Galaxy S5, iPhone 6/7/8 */
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 410px) {
     .im-rise {
-        color: orange;
+        font-size: 2.2em;
+    }
+
+    .nav-button {
+        font-size: 1.2em;
+    }
+
+    a:link {
+        font-size: 1.2em;
+    }
+
+    .description, .bio, .project-description {
+        font-size: 1.2em;
+    }
+
+    .self {
+        width: 25%;
     }
 }
 
+@media screen and (min-width: 750px) {
+    .im-rise {
+        padding-top: 8%;
+        font-size: 2.7em;
+    }
+
+    .nav-button {
+        font-size: 1.5em;
+    }
+    
+    .self {
+        width: 20%;
+    }
+
+    .intro {
+        min-height: 300px;
+    }
+
+    .email-me {
+        margin-left: 50%;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    .im-rise {
+        padding-top: 5%;
+    }
+
+    .self {
+        width: 18%;
+        max-width: 300px;
+        margin-left: 4%;
+    }
+
+    .intro {
+        min-height: 400px;
+    }
+}
+
+@media screen and (min-width: 1520px) {
+    .im-rise {
+        padding-top: 3%;
+    }
+
+    .intro {
+        min-height: 500px;
+    }
+
+    .self {
+        width: 15%;
+        margin-left: 6%;
+    }
+
+    .description {
+        margin-top: 7%;
+    }
+}
