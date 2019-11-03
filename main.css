@@ -1,30 +1,219 @@
 body * {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
+    font-family: sans-serif;
 }
 
-/* Header, main, footer styling */
-#navigation {
-    background-color: whitesmoke;
+body {
+    background-color: white;
 }
 
-#header {
-    background-color: lightgray;
-    height: 25vh;
-}
 
-#main {
+/* Container styling */
+header {
+    height: 30vh;
+    position: relative;
     background-color: gray;
-    min-height: 70vh;
+}
+
+.svg-header {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+
+#navigation {
+    padding-top: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    color: black;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+main {
+    background-color: lightgray;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.svg-main {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.section {
+    padding: 20px 20px 20px 20px;
 }
 
 #footer {
-    background-color: whitesmoke;
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
 }
 
-/* Section styling */
-.intro, .projects, .about {
-    background-color: darkgray;
-    height: 20vh;
+/* Nav Button Styles */
+.nav-button {
+    background-color: gray;
+    border: none;
+    text-transform: uppercase;
+    outline-color: white;
+    font-size: .9em;
+}
+
+.nav-button:hover {
+    border-bottom: 3px solid black;
+}
+
+.nav-button:active {
+    border-bottom: 3px solid white;
+}
+
+/*Regular button and link styles*/
+.email-me {
+    background-color: gray;
+    border: 1px solid black;
+}
+
+.email-me > a:link {
+    color: black;
+    text-decoration: none;
+}
+
+.email-me > a:active {
+    color: white;
+}
+
+/* Text Styles */
+.heading-text {
+    font-size: 1.7em;
+}
+
+.description, .bio, .project-description {
+    font-size: 1em;
+}
+
+/* Image styling */
+.self {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.quiz-app-screenshot {
+    max-width: 100%;
+}
+
+.footer-icon {
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Positioning elements */
+.im-rise {
+    padding-left: 10%;
+    padding-top: 12%;
+}
+
+.self {
+    margin-top: 6%;
+    margin-right: 2%;
+    float: left;
+}
+
+.description {
+    padding-left: 30%;
+}
+
+.email-me {
+    margin-left: 60%;
+    clear: left;
+}
+
+/* Media Queries*/
+@media screen and (min-width: 410px) {
+    .im-rise {
+        font-size: 2.2em;
+    }
+
+    .nav-button {
+        font-size: 1.2em;
+    }
+
+    a:link {
+        font-size: 1.2em;
+    }
+
+    .description, .bio, .project-description {
+        font-size: 1.2em;
+    }
+
+    .self {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .im-rise {
+        padding-top: 8%;
+        font-size: 2.7em;
+    }
+
+    .nav-button {
+        font-size: 1.5em;
+    }
+
+    .self {
+        width: 20%;
+    }
+
+    .intro {
+        min-height: 300px;
+    }
+
+    .email-me {
+        margin-left: 50%;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    .im-rise {
+        padding-top: 5%;
+    }
+
+    .self {
+        width: 18%;
+        max-width: 300px;
+        margin-left: 4%;
+    }
+
+    .intro {
+        min-height: 400px;
+    }
+}
+
+@media screen and (min-width: 1520px) {
+    .im-rise {
+        padding-top: 3%;
+    }
+
+    .intro {
+        min-height: 500px;
+    }
+
+    .self {
+        width: 15%;
+        margin-left: 6%;
+    }
+
+    .description {
+        margin-top: 7%;
+    }
 }
