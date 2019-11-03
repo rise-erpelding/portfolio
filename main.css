@@ -75,7 +75,7 @@ main {
     border-bottom: 3px solid white;
 }
 
-/*Regular button and link styles*/
+/*Button and link styles*/
 .email-me {
     background-color: gray;
     border: 1px solid black;
@@ -99,24 +99,8 @@ main {
     font-size: 1em;
 }
 
-/* Image styling */
-.self {
-    width: 20%;
-    border-radius: 50%;
-}
-
-.quiz-app-screenshot {
-    max-width: 100%;
-}
-
-.footer-icon {
-    height: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 /* Positioning elements */
-.im-rise {
+h1 {
     padding-left: 10%;
     padding-top: 12%;
 }
@@ -138,7 +122,7 @@ main {
 
 /* Media Queries*/
 @media screen and (min-width: 410px) {
-    .im-rise {
+    h1 {
         font-size: 2.2em;
     }
 
@@ -154,27 +138,16 @@ main {
         font-size: 1.2em;
     }
 
-    .self {
-        width: 25%;
-    }
 }
 
 @media screen and (min-width: 750px) {
-    .im-rise {
+    h1 {
         padding-top: 8%;
         font-size: 2.7em;
     }
 
     .nav-button {
         font-size: 1.5em;
-    }
-
-    .self {
-        width: 20%;
-    }
-
-    .intro {
-        min-height: 300px;
     }
 
     .email-me {
@@ -184,33 +157,14 @@ main {
 }
 
 @media screen and (min-width: 900px) {
-    .im-rise {
+    h1 {
         padding-top: 5%;
-    }
-
-    .self {
-        width: 18%;
-        max-width: 300px;
-        margin-left: 4%;
-    }
-
-    .intro {
-        min-height: 400px;
     }
 }
 
 @media screen and (min-width: 1520px) {
-    .im-rise {
+    h1 {
         padding-top: 3%;
-    }
-
-    .intro {
-        min-height: 500px;
-    }
-
-    .self {
-        width: 15%;
-        margin-left: 6%;
     }
 
     .description {
