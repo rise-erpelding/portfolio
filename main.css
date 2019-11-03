@@ -99,6 +99,10 @@ main {
     font-size: 1em;
 }
 
+.project > h2 {
+    text-align: center;
+}
+
 /* Positioning elements */
 h1 {
     padding-left: 10%;
@@ -154,6 +158,10 @@ h1 {
         margin-left: 50%;
     }
 
+    .description, .bio, .project-description {
+        font-size: 1.3em;
+    }
+
 }
 
 @media screen and (min-width: 900px) {
@@ -170,6 +178,10 @@ h1 {
 
     .project {
         width: 45%;
+    }
+
+    .description, .bio, .project-description {
+        font-size: 1.5em;
     }
 }
 
