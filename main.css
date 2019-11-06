@@ -15,21 +15,15 @@ html, body {
 
 #wrapper {
     min-height: 94%;
-    /*going to have to adjust this in media queries for screen sizes*/
 }
 
 main {
-    /* padding: 20px; */
     padding-bottom: 50px;
 }
 
 footer {
     height: 50px;
-    /* margin-top: -50px; */
 }
-/*End Sticky Footer*/
-
-
 
 /* Container styling */
 header {
@@ -46,7 +40,6 @@ header {
 }
 
 #navigation {
-    /* text-align: center; */
     padding-top: 10px;
     padding-right: 10px;
     display: flex;
@@ -81,7 +74,6 @@ main {
     display: flex;
     justify-content: center;
 }
-/*End container styling*/
 
 /* JS Button Styles */
 .nav-button {
@@ -100,23 +92,8 @@ main {
 .nav-button:active {
     border-bottom: 3px solid white;
 }
-/*end JS button styles*/
 
 /*Regular button and link styles*/
-.email-me {
-    background-color: #32C756;
-    border: 1px solid #32C756;
-}
-
-.email-me > a:link {
-    color: #030c0e;
-    text-decoration: none;
-    font-family: 'Inconsolata';
-}
-
-.email-me > a:active {
-    color: #EBF2FA;
-}
 
 a:link {
     color: #32C756;
@@ -129,12 +106,28 @@ a:active {
 a:visited {
     color: #32C756;
 }
-/*End regular button styles*/
+
+.intro > a:link {
+    color: #030c0e;
+    background-color: #32C756;
+    padding: 3px;
+    border: 1px solid #69d684;
+    border-radius: 8%;
+    text-decoration: none;
+    font-family: 'Inconsolata';
+}
+
+.intro > a:hover {
+    background-color: #8fe0a2;
+}
+
+.intro > a:active {
+    background-color: #8fe0a2;
+}
 
 /* Text Styles */
 .heading-text {
     font-family: 'Inconsolata', sans-serif;
-    /* position: relative; This one line makes it scroll horizontally*/
     font-size: 1.7em;
 }
 
@@ -186,7 +179,7 @@ a:visited {
     clear: left;
 }
 
-/* Styles for Galaxy S5, iPhone 6/7/8 */
+/* Media Queries */
 @media screen and (min-width: 410px) {
     .im-rise {
         font-size: 2.2em;
@@ -298,9 +291,7 @@ a:visited {
     }
 }
 
-
 /*The hidden class*/
 .hidden {
     display: none;
 }
-/*End the hidden class*/
