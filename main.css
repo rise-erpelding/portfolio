@@ -175,7 +175,7 @@ a:visited {
 }
 
 .email-me {
-    margin-left: 60%;
+    margin-left: 50%;
     clear: left;
 }
 
@@ -191,6 +191,10 @@ a:visited {
 
     a:link {
         font-size: 1.2em;
+    }
+
+    .email-me {
+        margin-left: 40%;
     }
 
     .description, .bio, .project-description {
@@ -221,7 +225,7 @@ a:visited {
     }
 
     .email-me {
-        margin-left: 50%;
+        margin-left: 40%;
     }
 
     .description, .bio, .project-description {
@@ -250,6 +254,10 @@ a:visited {
 
     .project {
         width: 45%;
+    }
+
+    .email-me {
+        margin-left: 60%;
     }
 
     .intro {
