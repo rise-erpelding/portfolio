@@ -179,6 +179,12 @@ a:visited {
     clear: left;
 }
 
+.quiz-app-screenshot {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
 /* Media Queries */
 @media screen and (min-width: 410px) {
     .im-rise {
@@ -203,6 +209,10 @@ a:visited {
 
     .self {
         width: 25%;
+    }
+
+    .quiz-app-screenshot {
+        width: 80%;
     }
 }
 
@@ -230,6 +240,10 @@ a:visited {
 
     .description, .bio, .project-description {
         font-size: 1.3em;
+    }
+
+    .quiz-app-screenshot {
+        width: 60%;
     }
 
 }
@@ -266,6 +280,10 @@ a:visited {
 
     .description, .bio, .project-description {
         font-size: 1.5em;
+    }
+
+    .quiz-app-screenshot {
+        width: 90%;
     }
 }
 
