@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata:bold|Overpass:extra-light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:extra-light&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:bold&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <title>Rise's Portfolio</title>
 </head>
 <body>
@@ -22,20 +26,23 @@
             </nav>
             <h1 class="heading-text im-rise dark-text">Hi! I'm Risé.</h1>
             <svg class="svg-header" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <polygon fill="#030c0e" points="0,100 100,50 100,100"/>
+                <polygon fill="#D1E1EA" points="0,100 100,50 100,100"/>
             </svg>
         </header>
         <main id="main">
+
             <section class="intro section">
+                <h2 class="hidden">Introduction</h2>
                 <img class="self" alt="picture of Rise" src="images/self.png">
-                <section class="description light-text">
+                <div class="description dark-text">
                     <p>I am a front-end web developer and former teacher, and I am passionate about using technology for teaching and learning.</p>
                     <p>My skills include HTML, CSS, JavaScript, and jQuery.</p>
-                </section>
+                </div>
                     <a class="email-me" href="mailto:rise.erpelding@gmail.com" target="_blank">Email me</a>
             </section>
 
-            <section class="bio light-text section">
+            <section class="bio dark-text section">
+                <h2 class="hidden">Bio</h2>
                     <p>I have been fascinated by web design since I realized that I could use HTML to change the design of my blog in high school. In the years since, as I became a teacher and instructional designer, I found that in my projects there was usually something I was hoping to customize, something more I was wanting to build to make my idea work, and that coding was the best way to accomplish it. Now, my dream is to help other people make their ideas come to life.</p>
                 
                     <p>If I won the lottery, I’d probably spend (some of) the money on learning something new. I love taking classes and learning new things, and some of my learning endeavors over the years (aside from learning to code) have included math, Spanish, Japanese, and sewing.</p>
@@ -45,21 +52,24 @@
                     <p>Using the links below, you can view my work on GitHub, find me on LinkedIn, or email me.</p>
             </section>
 
-            <section class="projects light-text">
-                <section class="quiz-app project section">
+            <section class="projects dark-text">
+                <h2 class="hidden">Projects</h2>
+                <div class="quiz-app project section">
                     <h2 class="heading-text">GRE Vocabulary Quiz</h2>
                     <h3>Technologies used: HTML, CSS, JavaScript, jQuery</h3>
                     <a href="https://rise-erpelding.github.io/jquery-quiz-app" target="_blank"><img class="quiz-app-screenshot" src="images/quiz-app.png" alt="quiz app screen shot"></a>
-                    <section class="project-description">
+                    <div class="project-description">
                         <p>This is a quiz app I built using JavaScript and jQuery. The app tests users’ knowledge of GRE vocabulary words via multiple-choice questions, giving examples of the words in a context similar to what a user might encounter in graduate-level studies.</p>
-                    </section>
-                    <a href="https://github.com/rise-erpelding/jquery-quiz-app" target="_blank">View on GitHub</a> | <a href="https://rise-erpelding.github.io/jquery-quiz-app/" target="_blank">View live</a>
-                </section>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/rise-erpelding/jquery-quiz-app" target="_blank">View on GitHub</a> | <a href="https://rise-erpelding.github.io/jquery-quiz-app/" target="_blank">View live</a>
+                    </div>
+                </div>
             </section>
 
 
             <svg class="svg-main" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <polygon fill="#021C2B" points="0,0 0,100 100,100"/>
+                <polygon fill="#075D8F" points="0,0 0,100 100,100"/>
             </svg>
         </main>
     </div>
