@@ -156,6 +156,14 @@ a:visited {
     max-width: 100%;
 }
 
+.rabbit-hole-screenshots {
+    text-align: center;
+}
+
+.rabbit-hole-screenshot {
+    width: 80%;
+}
+
 .footer-icon {
     height: 30px;
     padding-left: 10px;
@@ -220,6 +228,18 @@ a:visited {
     }
 }
 
+@media screen and (min-width: 500px) {
+    .rabbit-hole-screenshot {
+        max-width: 70%;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .rabbit-hole-screenshot {
+        max-width: 50%;
+    }
+}
+
 @media screen and (min-width: 750px) {
     .im-rise {
         padding-top: 8%;
@@ -253,6 +273,10 @@ a:visited {
     .intro, .bio {
         padding-left: 120px;
         padding-right: 120px;
+    }
+
+    .rabbit-hole-screenshot {
+        width: 48%;
     }
 
 }
@@ -294,6 +318,10 @@ a:visited {
     .quiz-app-screenshot {
         width: 90%;
     }
+
+    .rabbit-hole-screenshot {
+        width: 90%;
+    }
 }
 
 @media screen and (min-width: 1520px) {
@@ -324,6 +352,12 @@ a:visited {
     .project {
         width: 45%;
     }
+
+    .rabbit-hole-screenshot {
+        width: 49%;
+    }
+
+
 }
 
 /*hidden class*/
