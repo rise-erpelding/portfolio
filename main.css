@@ -236,7 +236,7 @@ a:visited {
 
 @media screen and (min-width: 650px) {
     .rabbit-hole-screenshot {
-        max-width: 50%;
+        max-width: 67%;
     }
 }
 
@@ -276,7 +276,7 @@ a:visited {
     }
 
     .rabbit-hole-screenshot {
-        width: 48%;
+        width: 49%;
     }
 
 }
@@ -316,11 +316,11 @@ a:visited {
     }
 
     .quiz-app-screenshot {
-        width: 90%;
+        width: 95%;
     }
 
     .rabbit-hole-screenshot {
-        width: 90%;
+        width: 95%;
     }
 }
 
@@ -354,7 +354,7 @@ a:visited {
     }
 
     .rabbit-hole-screenshot {
-        width: 49%;
+        width: 100%;
     }
 
 
